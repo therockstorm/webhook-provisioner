@@ -143,7 +143,8 @@ test("toQueueDepthAlarm", () => {
     Namespace: "AWS/SQS",
     Period: 900,
     Statistic: "Average",
-    Threshold: 900
+    Threshold: 900,
+    TreatMissingData: "ignore"
   })
 })
 
@@ -163,7 +164,8 @@ test("toLambdaErrorAlarm", () => {
     Namespace: "AWS/Lambda",
     Period: 60,
     Statistic: "Sum",
-    Threshold: 1
+    Threshold: 1,
+    TreatMissingData: "ignore"
   })
 })
 
@@ -183,7 +185,8 @@ test("toLogErrorAlarm", () => {
     Namespace: "LogMetrics",
     Period: 60,
     Statistic: "Sum",
-    Threshold: 1
+    Threshold: 1,
+    TreatMissingData: "ignore"
   })
 })
 

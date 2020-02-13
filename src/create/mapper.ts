@@ -257,5 +257,6 @@ const toPutMetricAlarm = (
   Namespace: props.namespace,
   Period: props.period || 60,
   Statistic: props.statistic || "Sum",
-  Threshold: props.threshold || 1
+  Threshold: props.threshold || 1,
+  TreatMissingData: "ignore"
 })
